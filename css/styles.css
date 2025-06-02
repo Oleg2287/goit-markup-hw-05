@@ -496,21 +496,124 @@ img {
   fill: #f4f4fd;
 }
 
+/* MODAL */
+
 .backdrop {
-  position: fixed;
-  top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
+  position: fixed;
+  top: 0;
+  /* display: flex;
+                align-items: center;
+                justify-content: center; */
 }
 
 .modal {
   width: 517px;
-  height: 794px;
-  position: absolute;
+  min-height: 794px;
   background-color: #fafafa;
-  border-radius: 15px;
+  border-radius: 4px;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 24px;
+}
+
+.modal-close {
+  background-color: #cecad1;
+  border: 1px solid #111111;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close-icon {
+  fill: transparent;
+  stroke: #111111;
+}
+
+.modal-title {
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+  margin-top: 24px;
+}
+
+.modal-field {
+  margin-bottom: 18px;
+}
+
+.modal-item {
+  width: 100%;
+  border: 1px solid rgba(17, 17, 17, 0.15);
+  background-color: transparent;
+  border-radius: 13px;
+  font-size: 14px;
+  color: teal;
+  font-weight: 700;
+  outline: transparent;
+}
+
+.modal-input {
+  height: 68px;
+  padding-left: 62px;
+}
+
+.modal-input:focus {
+  border-color: #fd9222;
+}
+
+.modal-input:focus + .modal-input-icon {
+  stroke: #fd9222;
+}
+
+/* .modal-input-cover:focus-within .modal-input {
+                border-color: #fd9222;
+              }
+              .modal-input-cover:focus-within .modal-input-icon {
+                stroke: #fd9222;
+              } */
+
+.modal-item::placeholder {
+  font-weight: 400;
+  color: #2264fd;
+}
+
+.modal-input-text {
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.modal-input-icon {
+  fill: transparent;
+  stroke: #111111;
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-input-cover {
+  position: relative;
+}
+
+.modal-textarea {
+  height: 137px;
+  resize: none;
+  padding: 8px 16px;
 }
