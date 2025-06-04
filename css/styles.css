@@ -564,7 +564,7 @@ img {
   background-color: transparent;
   border-radius: 4px;
   font-size: 14px;
-  color: teal;
+  color: var(--navy-blue-modal);
   outline: transparent;
 }
 
@@ -599,8 +599,8 @@ img {
 }
 
 .modal-input-icon {
-  /* fill: transparent; */
-  stroke: #111111;
+  /* fill: transparent;
+  stroke: #111111; */
   position: absolute;
   left: 16px;
   top: 50%;
