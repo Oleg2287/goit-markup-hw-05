@@ -736,12 +736,15 @@ img {
 .modal-checkbox:checked + .modal-agreement .custom-checkbox {
   background-color: #404bbf;
   border: none;
-  fill: #ffffff;
+  fill: transparent;
+  display: inline-flex;
+  /* fill: #ffffff; */
 }
 
 .modal-agreement {
   font-size: 12px;
   line-height: 1.17;
+  letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
   align-items: center;
