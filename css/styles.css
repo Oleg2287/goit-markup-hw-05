@@ -735,7 +735,7 @@ img {
 .modal-checkbox:checked + .modal-agreement .custom-checkbox {
   background-color: #404bbf;
   border: none;
-  display: inline-flex;
+  /* display: inline-flex; */
   fill: #f4f4fd;
 }
 
